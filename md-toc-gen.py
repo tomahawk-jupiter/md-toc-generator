@@ -1,7 +1,14 @@
+#!/usr/bin/env python3
+
 import re
 
+#################################################################################
+# This script will generate a contents section for a markdown file
+# You can choose the level of header to include
+# It will remove the existing contents section before adding a new one
+#
 # Author: Jupiter Tomahawk with help from ChatGPT (or maybe the other way round!)
-# This script will generate a contents section from markdown headers
+##################################################################################
 
 
 def generate_toc(file_content, num_levels):
@@ -38,7 +45,7 @@ def main():
 
         if toc_match:
             replace_toc = input(
-                "Table of Contents already exists. Do you want to replace it, theres a chance this won't work as expected? (y/n): ").lower()
+                "Table of Contents already exists. Do you want to replace it? (y/n): ").lower()
             if replace_toc == 'y':
                 # Find the position of the first empty line after '## Table of Contents'
                 toc_start = toc_match.end() + \

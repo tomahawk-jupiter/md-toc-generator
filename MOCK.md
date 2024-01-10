@@ -3,10 +3,8 @@
 ## Table of Contents
 
 - [One](#one)
-  - [One 2](#one-2)
 - [Two](#two)
-  - [Two 2](#two-2)
-
+- [Three](#three)
 
 ## One
 
@@ -27,3 +25,10 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 ### Two 2
+
+- one
+- tow
+
+## Three
+
+jhkls;jdfa lskjdafls;kjfds
