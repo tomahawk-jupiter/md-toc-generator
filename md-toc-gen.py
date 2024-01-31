@@ -7,7 +7,7 @@ import re
 # You can choose the level of header to include
 # It will remove the existing contents section before adding a new one
 #
-# Author: Jupiter Tomahawk with help from ChatGPT (or maybe the other way round!)
+# Author: Jupiter Tomahawk with help from ChatGPT
 ##################################################################################
 
 
@@ -18,6 +18,10 @@ def generate_toc(file_content, num_levels):
     for level, header_text in headers:
         # Remove special characters and spaces
         anchor = re.sub(r'[^a-zA-Z0-9]+', '-', header_text.lower())
+
+        # remove trailing "-" otherwise link won't work
+        if anchor.endswith("-"):
+            anchor = anchor[:-1]
 
         # Determine the indentation based on header level
         indentation = " " * ((len(level) - 2) * 2) if len(level) > 2 else ""

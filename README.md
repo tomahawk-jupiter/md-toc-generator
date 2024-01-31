@@ -15,15 +15,11 @@ Run the script in the terminal and it will prompt for:
 ## How to make it executable from anywhere
 
 1. Add this to the top of the script: `#!/usr/bin/env python3`
-2. Make it executable: `chmod +x generate_md_toc.py`
-3. Move it to bin folder: `sudo mv generate_md_toc.py /usr/local/bin`
+2. Make it executable: `chmod +x md-toc-gen.py`
+3. Copy it to bin folder: `sudo cp md-toc-gen.py /usr/local/bin`
 
-   NOTE: you can use `cp` instead of `mv` to keep the original in the same place.
+   NOTE: running this command again will overwrite, ie. to update it with any changes.
 
 ## Author
 
 Jupiter Tomahawk
-
-## Improvements
-
-Add tests, make it more robust
