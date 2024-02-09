@@ -10,7 +10,7 @@ Run the script in the terminal and it will prompt for:
 
 1. The markdown file name/path.
 2. How many levels of headers you want to include in the contents.
-3. Whether or not to continue if there is already a 'Table of Contents'.
+3. Whether or not to continue if there is already a 'Table of Contents'. It will delete the original and add the new one.
 
 ## How to make it executable from anywhere
 

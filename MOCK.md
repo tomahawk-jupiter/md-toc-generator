@@ -7,6 +7,7 @@
 - [Two?](#two)
   - [Two 2](#two-2)
 - [Three](#three)
+- [Four & four](#four--four)
 
 ## One
 
@@ -34,3 +35,5 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 ## Three
 
 jhkls;jdfa lskjdafls;kjfds
+
+## Four & four

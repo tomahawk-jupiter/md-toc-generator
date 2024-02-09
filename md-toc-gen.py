@@ -17,7 +17,11 @@ def generate_toc(file_content, num_levels):
 
     for level, header_text in headers:
         # Remove special characters and spaces
-        anchor = re.sub(r'[^a-zA-Z0-9]+', '-', header_text.lower())
+        # Keep & character, this is removed after to leave --
+        # this is to format the link correctly so it works.
+
+        anchor = re.sub(r'[^a-zA-Z0-9&]+', '-', header_text.lower())
+        anchor = anchor.replace('&', '')
 
         # remove trailing "-" otherwise link won't work
         if anchor.endswith("-"):
