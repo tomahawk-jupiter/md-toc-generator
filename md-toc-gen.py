@@ -7,7 +7,7 @@ import re
 # You can choose the level of header to include
 # It will remove the existing contents section before adding a new one
 #
-# Author: Jupiter Tomahawk with help from ChatGPT
+# Author: Jupiter Tomahawk with help from ChatGPT 3.5
 ##################################################################################
 
 
