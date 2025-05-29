@@ -1,14 +1,17 @@
 # Markdown Table of Contents Generator
 
-A nice simple interactive tool to generate a table of contents for your markdown file.
+## `md-toc-gen.py`
 
-The script will generate the table of contents and add it to the file beneath the main header. You can choose the level of header to include. The toc will be nested accordingly.
+Improved version, takes command line arguments.
 
-Its interactive, it prompts you for options on how you want to generate your TOC.
+```bash
+python3 md-toc-gen.py --help # get help
 
-NOTE: I haven't fully tested or made it work for all use cases. Its primarily for my own personal use for which it works well. I used to manually write a toc for my notes and it was time consuming!
+# Example:
+python3 md-toc-gen.py filename.md --depth 2 --no-overwrite
+```
 
-## Usage
+## Old Version: It prompts user for each argument
 
 Run the script in the terminal and it will prompt for:
 
@@ -24,24 +27,6 @@ Run the script in the terminal and it will prompt for:
 
    NOTE: running this command again will overwrite, ie. to update it with any changes.
 
-## Author
-
-Jupiter Tomahawk
-
-## Bugs
-
-### Hypen after hash
-
-This `- [$PATH](#-path)` should be `- [$PATH](#path)`. The special character is replaced with `-` but this should be removed when its directly after the `#`.
-
-This means the link won't work if you click it. The toc entry will still be generated.
-
-### Extra empty lines
-
-An extra empty line is added after the TOC. This is a problem if the script is run multiple times, it will add an extra empty line each time.
-
-When I save my md file in vscode it removes the extra space for me.
-
 ## New Feature Ideas
 
 ### Sort Feature
@@ -49,13 +34,3 @@ When I save my md file in vscode it removes the extra space for me.
 Include an option that will sort sections into alphabetical (or number) order. With or without creating a TOC.
 
 This would be useful if you have glossary/reference style notes that you've been writing in no particular order and have become unwieldy. Re-ordering would be useful.
-
-### Non-interactive mode with CLI arguments
-
-Make it so it can take command line arguments for the file name, options etc.
-
-So interactive mode doesn't have to be used. This will make it faster to use. Eg:
-
-`md-toc-gen.py [filename] [header-depth] [-f]`
-
-- `-f` for force, ie. overwrite without warning

@@ -1,15 +1,6 @@
 # Generate Table of Contents
 
-## Table of Contents
-
-- [One](#one)
-  - [One 2](#one-2)
-- [Two?](#two)
-  - [Two 2](#two-2)
-- [Three](#three)
-- [Four & four](#four--four)
-
-## One
+## One \$
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -32,8 +23,16 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 - one
 - tow
 
-## Three
+## Three open-source
 
 jhkls;jdfa lskjdafls;kjfds
 
 ## Four & four
+
+## `Code` header
+
+This section has backticks in the title.
+
+## Mixed: 100% "Real" _Markdown_
+
+This section uses a variety of markdown symbols.
