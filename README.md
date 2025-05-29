@@ -23,9 +23,16 @@ Run the script in the terminal and it will prompt for:
 
 1. Add this to the top of the script: `#!/usr/bin/env python3`
 2. Make it executable: `chmod +x md-toc-gen.py`
+
+   - or copy it then change the permission if you don't want them both to be executable.
+
 3. Copy it to bin folder: `sudo cp md-toc-gen.py /usr/local/bin`
 
-   NOTE: running this command again will overwrite, ie. to update it with any changes.
+   - running this command again will overwrite, ie. to update it with any changes.
+
+4. Rename without file extension: `sudo mv /usr/local/bin/md-toc-gen.py /usr/local/bin/md-toc-gen`
+
+   - executable scripts don't usually have file extensions
 
 ## New Feature Ideas
 
